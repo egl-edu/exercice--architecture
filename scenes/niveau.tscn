@@ -261,3 +261,6 @@ volume_db = -8.0
 
 [node name="ZoneDefaite" parent="." instance=ExtResource("11_1an5a")]
 position = Vector2(74, 510)
+
+[connection signal="bloc_detruit" from="Boule" to="." method="bloc_detruit"]
+[connection signal="boule_touchee" from="Boule" to="." method="boule_touchee"]

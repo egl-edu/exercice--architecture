@@ -1,6 +1,8 @@
 extends CharacterBody2D
 class_name Boule
 
+signal bloc_detruit
+signal boule_touchee
 
 var vitesse = 100
 var direction = Vector2(1,1)
@@ -12,8 +14,8 @@ func _physics_process(delta: float) -> void:
 		direction = direction.bounce(collision.get_normal())
 		if (collision.get_collider() is RigidBody2D):
 			collision.get_collider().call_deferred("queue_free")
-			$"..".bloc_detruit()
+			emit_signal("bloc_detruit")
 			vitesse += 10
 		else :
-			$"..".boule_touchee()
+			emit_signal("boule_touchee")
 		
