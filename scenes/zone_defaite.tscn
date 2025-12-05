@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddcf6tfxayaux"]
+
+[ext_resource type="Script" uid="uid://ss1vdg1g751w" path="res://scripts/zone_defaite.gd" id="1_v6d0h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_biv77"]
+size = Vector2(617, 52)
+
+[node name="ZoneDefaite" type="Area2D"]
+script = ExtResource("1_v6d0h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(284.5, 20)
+shape = SubResource("RectangleShape2D_biv77")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
