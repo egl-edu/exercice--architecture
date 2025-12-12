@@ -27,6 +27,7 @@ script = ExtResource("1_liqxx")
 zone_defaite = NodePath("ZoneDefaite")
 
 [node name="Murs" type="Node2D" parent="."]
+position = Vector2(2, -8)
 
 [node name="Node2D3" type="Node2D" parent="Murs"]
 position = Vector2(-24, 0)
@@ -165,7 +166,7 @@ position = Vector2(758, -6.00268)
 shape = SubResource("RectangleShape2D_yvv1t")
 
 [node name="BarreJoueur" type="CharacterBody2D" parent="."]
-position = Vector2(340, 414)
+position = Vector2(342, 406)
 motion_mode = 1
 floor_stop_on_slope = false
 script = ExtResource("3_sp565")
@@ -181,61 +182,61 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_yvv1t")
 
 [node name="Bloc" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(144, 203)
+position = Vector2(146, 195)
 
 [node name="Bloc2" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(144, 156)
+position = Vector2(146, 148)
 
 [node name="Bloc3" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(144, 114)
+position = Vector2(146, 106)
 
 [node name="Bloc4" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(225, 203)
+position = Vector2(227, 195)
 
 [node name="Bloc5" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(225, 156)
+position = Vector2(227, 148)
 
 [node name="Bloc6" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(225, 114)
+position = Vector2(227, 106)
 
 [node name="Bloc7" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(307, 203)
+position = Vector2(309, 195)
 
 [node name="Bloc8" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(307, 156)
+position = Vector2(309, 148)
 
 [node name="Bloc9" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(307, 114)
+position = Vector2(309, 106)
 
 [node name="Bloc10" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(388, 203)
+position = Vector2(390, 195)
 
 [node name="Bloc11" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(388, 156)
+position = Vector2(390, 148)
 
 [node name="Bloc12" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(388, 114)
+position = Vector2(390, 106)
 
 [node name="Bloc13" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(469, 203)
+position = Vector2(471, 195)
 
 [node name="Bloc14" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(469, 156)
+position = Vector2(471, 148)
 
 [node name="Bloc15" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(469, 114)
+position = Vector2(471, 106)
 
 [node name="Bloc16" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(550, 203)
+position = Vector2(552, 195)
 
 [node name="Bloc17" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(550, 156)
+position = Vector2(552, 148)
 
 [node name="Bloc18" parent="." instance=ExtResource("5_elpb3")]
-position = Vector2(550, 114)
+position = Vector2(552, 106)
 
 [node name="Boule" type="CharacterBody2D" parent="."]
-position = Vector2(362, 384)
+position = Vector2(364, 376)
 motion_mode = 1
 script = ExtResource("6_1p5go")
 metadata/_edit_group_ = true
@@ -260,7 +261,7 @@ stream = ExtResource("10_72ycl")
 volume_db = -8.0
 
 [node name="ZoneDefaite" parent="." instance=ExtResource("11_1an5a")]
-position = Vector2(74, 510)
+position = Vector2(76, 502)
 
 [connection signal="bloc_detruit" from="Boule" to="." method="bloc_detruit"]
 [connection signal="boule_touchee" from="Boule" to="." method="boule_touchee"]
